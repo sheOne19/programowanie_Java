@@ -1,22 +1,22 @@
 package com.ap.vladyslav;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class Main {
-
 	public static void main(String[] args) throws IOException {
-		double a, b, pole;
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("Program oblicza pole prostok¹ta.");
-		System.out.println("Podaj bok a.");
-		a = Double.parseDouble(br.readLine());
-		System.out.println("Podaj bok b.");
-		b = Double.parseDouble(br.readLine());
-		pole = a * b;
 
-		System.out.print("pole prostok¹ta o boku a = " + a + " i boku b = " + b);
-		System.out.println(" wynosi " + pole + ".");
+		 String[] oblicz(int a, int b, int c, int d)  {
+			ArrayList<Integer> list = new ArrayList<>();
+			list.add(a);
+			list.add(b);
+			list.add(c);
+			list.add(d);
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("print four numbers");
+		
 	}
 
+}
 }
