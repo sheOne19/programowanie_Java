@@ -12,11 +12,25 @@ public class Biblioteka{
 		books = new ArrayList();
 	}
 	
-	public String AddBook() {
-		books.add(new Book());
-		return "Dodano";
+	public void AddBook(String name, int pages, String authorName) {
+		Book book =new Book(name, pages, authorName);
+		books.add(book);
+				
 	}
-	public int BookCount() {
-		return books.size();
+	public void GetBooks() {
+
+		for (Book book : books) {
+			System.out.println(book.toString());
+		}
 	}
+	public void AddUser(String name, String surname, int age) {
+		User user = new User(name, surname, age);
+		users.add(user);	
+	}
+	public void GetUsers() {
+		for (User user : users) {
+			System.out.println(user.toString());
+		}
+	}
+
 }
